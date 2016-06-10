@@ -1,0 +1,221 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\codedTarget.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\codedTarget.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CODEDTARGET_DIALOG DIALOGEX 0, 0, 357, 402
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "codedTarget"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "退出",IDOK,280,100,45,25
+    PUSHBUTTON      "载入图像  和初始化",IDC_BUTTON1,25,100,50,25,
+                    BS_MULTILINE
+    PUSHBUTTON      "一键      自动解码",IDC_BUTTON2,145,100,50,25,
+                    BS_VCENTER | BS_MULTILINE
+    GROUPBOX        "检测结果",IDC_STATIC,15,10,320,75,BS_CENTER
+    EDITTEXT        IDC_EDIT1,75,30,40,14,ES_AUTOHSCROLL
+    LTEXT           "解码时间 s",IDC_STATIC,25,30,45,15
+    EDITTEXT        IDC_EDIT2,181,30,40,14,ES_AUTOHSCROLL
+    LTEXT           "目标数目",IDC_STATIC,131,30,45,15
+    PUSHBUTTON      "保存结果图",IDC_BUTTON3,25,55,50,20
+    PUSHBUTTON      "保存坐标文件",IDC_BUTTON4,145,55,50,20
+    GROUPBOX        "参数设置和解码",IDC_STATIC,15,140,320,145,BS_CENTER
+    LTEXT           "——————————————————————————————————————",
+                    IDC_STATIC,21,180,310,10
+    PUSHBUTTON      "自动获取参数",IDC_BUTTON5,25,156,50,20
+    CONTROL         "全自动",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,151,160,40,10
+    CONTROL         "普通",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,215,160,32,10
+    CONTROL         "抗光照不匀",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,271,160,56,10
+    LTEXT           "获取模式：",IDC_STATIC,95,160,40,15
+    CONTROL         "固定阈值",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,151,196,48,10
+    CONTROL         "动态阈值",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,215,196,48,10
+    CONTROL         "自适应局部",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,271,196,56,10
+    LTEXT           "二值化方法：",IDC_STATIC,91,196,50,15
+    EDITTEXT        IDC_EDIT5,151,216,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "灰度阈值",IDC_STATIC,101,216,45,15
+    EDITTEXT        IDC_EDIT6,275,216,40,14,ES_AUTOHSCROLL
+    LTEXT           "中心圆直径",IDC_STATIC,225,216,45,15
+    PUSHBUTTON      " 解码",IDC_BUTTON7,25,255,50,20,BS_MULTILINE
+    LTEXT           "——————————————————————————————————————",
+                    IDC_STATIC,21,235,310,10
+    CTEXT           "人工设置参数：",IDC_STATIC,25,208,60,23
+    PUSHBUTTON      " 解码 (标志尺寸不限)",IDC_BUTTON8,145,255,55,20,
+                    BS_CENTER | BS_MULTILINE
+    GROUPBOX        "调试",IDC_STATIC,15,300,320,85,BS_CENTER
+    PUSHBUTTON      "二值化",IDC_BUTTON9,25,315,50,20,BS_MULTILINE
+    PUSHBUTTON      "中心圆",IDC_BUTTON10,145,315,50,20,BS_MULTILINE
+    EDITTEXT        IDC_EDIT7,280,360,40,14,ES_AUTOHSCROLL
+    LTEXT           "目标序号",IDC_STATIC,230,360,45,15
+    PUSHBUTTON      "椭圆修正",IDC_BUTTON11,25,355,50,20,BS_MULTILINE
+    PUSHBUTTON      "单目标解码",IDC_BUTTON12,145,355,50,20,BS_MULTILINE
+    LTEXT           "——————————————————————————————————————",
+                    IDC_STATIC,20,340,315,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "codedTarget Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "codedTarget\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2015\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "codedTarget.EXE\0"
+            VALUE "ProductName", "codedTarget 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CODEDTARGET_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 350
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 395
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\codedTarget.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
